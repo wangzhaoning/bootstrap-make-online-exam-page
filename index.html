@@ -1,33 +1,235 @@
 <html>
-    <head>
-        <link rel="stylesheet" href="./bootstrap-3.3.7-dist/css/bootstrap.css">
-        <script src="./jquery-3.2.1.js"></script>        
-        <script src="./bootstrap-3.3.7-dist/js/bootstrap.js"></script>
-    </head>
-    <body>
-        <!--write your code here-->
-        <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-  Launch demo modal
-</button>
 
-<!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+<head>
+  <meta charset="UTF-8">
+  <title>统一建模理论测试</title>
+  <link rel="stylesheet" href="./bootstrap-3.3.7-dist/css/bootstrap.css">
+  <script type="text/javascript" src ="./main.js"></script>
+  <script src="./jquery-3.2.1.js"></script>
+  <script src="./bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+</head>
+
+<body>
+<h1>统一建模语言理论测试</h1>
+  <div class="row" style="margin-top: 20px">
+    <div class="col-xs-2">
+      考试科目：统一建模语言
+    </div>
+    <div class="col-xs-2">
+
+    </div>
+    <div class="col-xs-2">
+      时间：100分钟
+    </div>
+    <div class="col-xs-2">
+
+    </div>
+    <div class="col-xs-2">
+      得分：<input type="text" id="result">
+    </div>
+    <div class="col-xs-2">
+
+    </div>
+  </div>
+  <dev class="row">
+    <div class="col-xs-2">
+      班级：<input type="text" id="class"/>
+    </div>
+
+    <div class="col-xs-2">
+      学号：  <input type="text" id ="studentId" />
+    </div>
+
+    <div class="col-xs-2">
+      姓名：<input type="text" id="name"/>
+    </div>
+  </dev>
+  <br>
+  <h2>一、填空题（每空5分，共20分）</h2>
+  <ol>
+    <li>
+      UML的中文全称是：
+      <input type="text" name="" id="fill1" />
+    </li>
+    <li>
+      对象最突出的特征是：
+      <input type="text" id="fill21"></input>
+        <input type="text" id="fill22"></input>
+        <input type="text" id="fill23"></input>
+    </li>
+  </ol>
+  <br>
+  <h2>二、选择题（每空10分，共20分）</h2>
+  <br>
+  <ol>
+    <li id="sChoice1">
+      UML与软件工程的关系是：
+
+      <div class="form-check">
+            <label class="radio">
+                <input type="radio"  name="one" id="schioce11">(A)UML就是软件工程
+            </label>
+        </div>
+
+      <div class="form-check">
+            <label class="radio">
+                <input type="radio"  name="one" id="schioce12">(B)UML参与到软件工程中软件开发过程中的几个阶段
+            </label>
+        </div>
+
+      <div class="form-check">
+            <label class="radio">
+                <input type="radio"  name="one" id="schioce13">(C)UML与软件工程无关
+            </label>
+        </div>
+
+      <div class="form-check">
+          <label class="radio">
+              <input type="radio"  name="one" id="schioce14">(D)UML是软件工程的一部分
+          </label>
       </div>
-      <div class="modal-body">
-        You're ready to go!
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+      <br>
+    </li>
+    <li id= "sChoice2">
+      Java语言支持：
+      <div class="form-check">
+            <label class="radio">
+                <input type="radio"  name="two" id="schoice21">
+                (A)单继承
+            </label>
+        </div>
+        <div class="form-check">
+              <label class="radio">
+                  <input type="radio"  name="two" id="schoice22">
+                  (B)多继承
+              </label>
+          </div>
+          <div class="form-check">
+              <label class="radio">
+                  <input type="radio"  name="two" id="schoice23">
+                  (C)单继承和多继承都支持
+              </label>
+          </div>
+          <div class="form-check">
+              <label class="radio">
+                  <input type="radio"  name="two" id="schoice24">
+                  (D)单继承和多继承都不支持
+              </label>
+          </div>
+    </li>
+  </ol>
+  <h2>三、多择题（每题10分，共20分）</h2>
+  <ol>
+    <li id="mChoice1">
+      用例的粒度
+      <div class="form-check">
+            <label class="checkbox">
+                <input type="checkbox"  id="mchoice11">
+                (A)概述级
+            </label>
+        </div>
+        <div class="form-check">
+            <label class="checkbox">
+                <input type="checkbox"  id="mchoice12">
+                (B)需求级
+            </label>
+        </div>
+        <div class="form-check">
+            <label class="checkbox">
+                <input type="checkbox"  id="mchoice13">
+                (C)用户目标级
+            </label>
+        </div>
+
+        <div class="form-check">
+            <label class="checkbox">
+                <input type="checkbox"  id="mchoice14">
+                (D)子功能级
+            </label>
+        </div>
+    </li>
+    <li id="mChoice2">
+      类图由以下哪三部分组成：
+      <div class="form-check">
+            <label class="checkbox">
+                <input type="checkbox" value="A" id="mchoice21">
+                (A)名称(Name)
+            </label>
+        </div>
+        <div class="form-check">
+            <label class="checkbox">
+                <input type="checkbox" value="B" id="mchoice22">
+                (B)属性(Attribute）
+            </label>
+        </div>
+        <div class="form-check">
+            <label class="checkbox">
+                <input type="checkbox" value="C" id="mchoice23">
+                (C)操作(Operation)
+            </label>
+        </div>
+
+        <div class="form-check">
+            <label class="checkbox">
+                <input type="checkbox" value="D" id="mchoice24">
+                (D)方法(Function)
+            </label>
+        </div>
+    </li>
+  </ol>
+  <div id="Judge">
+    <h2>四、判断题（每题10分，共20分）</h2>
+    <div id="judge1">
+        <span>1.用例图只是用于和客户交流和沟通的，用于确定需求</span>
+        <label class="inline">
+            <input type="radio" name="Judge1"  id="t1">√
+        </label>
+        <label class="inline">
+            <input type="radio" name="Judge1" id="f1">×
+        </label>
+    </div>
+
+    <div id="judge2">
+        <span>2.在状态图中，终止状态在一个状态图中允许有任意多个</span>
+        <label class="inline">
+            <input type="radio" name="Judge2" id="t2">√
+        </label>
+        <label class="inline">
+            <input type="radio" name="Judge2" id="f2">×
+        </label>
+    </div>
+</div>
+
+<div>
+    <h2>五、简答题 (每题20分)</h2>
+    <label >1.简述什么是模型以及模型的表现形式？
+        <div ><textarea id="sketch"></textarea></div>
+    </label>
+</div>
+  <button type="button" class="btn btn-sm" data-toggle="modal" data-target="#myModal">
+    提交得分
+  </button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+        </div>
+        <div class="modal-body">
+          You're ready to go!
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <button id="cbutton"  onclick="main()" data-dismiss="modal">Save changes</button>
+        </div>
       </div>
     </div>
   </div>
-</div>
-    </body>
+</body>
+
 </html>
